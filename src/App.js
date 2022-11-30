@@ -1,5 +1,6 @@
 import "./App.css"
-import {Header,Container,Hero} from "./components/index"
+import {Container} from "./components/index"
+import {Header,Hero,MostPopular,GamingLibrary} from "./Sections/index"
 
 const App = () => {
     return(
@@ -7,6 +8,8 @@ const App = () => {
          <Header text = "this is header"  />
          <Container>
             <Hero/>
+            <MostPopular/>
+            <GamingLibrary/>
          </Container>
         </>
     )

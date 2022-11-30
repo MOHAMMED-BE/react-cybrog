@@ -1,12 +1,12 @@
 import "./Header.css"
 import logo from "../../assets/images/logo.png"
-import NavItem, { NavItemDropDown } from "../NavItem/NavItem"
+import NavItem, { NavItemDropDown } from "../../components/NavItem/NavItem"
 
 const Header = (props) => {
     return (
-        <nav className="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top position-relative">
+        <nav className="navbar navbar-expand-md navbar-dark text-white fixed-top position-relative">
             <div className="container">
-                <a href="https://www.google.com" className="navbar-brand">
+                <a href="https://www.google.com" className="navbar-category">
                     <img src={logo} alt=""/>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
