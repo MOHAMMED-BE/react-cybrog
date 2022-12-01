@@ -1,0 +1,18 @@
+.gaming-library-card{
+    flex: 1 1 100%;
+}
+
+.gaming-library-card ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff1f;
+    padding: calc(var(--padding-primary)/2) 0;
+}
+
+.gaming-library-card h4{
+    font-size: 1rem;
+}
+
+.gaming-library-card .main-button a{
+    text-decoration: none;
+}
