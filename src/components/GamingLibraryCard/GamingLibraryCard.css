@@ -16,3 +16,7 @@
 .gaming-library-card .main-button a{
     text-decoration: none;
 }
+
+img{
+    border-radius: calc(var(--border-radius-primary)/3);
+}
