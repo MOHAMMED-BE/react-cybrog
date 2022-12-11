@@ -1,17 +1,24 @@
 import "./App.css"
-import {Container} from "./components/index"
-import {Header,Hero,Footer,MostPopular,GamingLibrary} from "./Sections/index"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Container } from "./components/index"
+import { Header, Footer } from "./Sections/index"
+import { Home, Profile } from './Pages/index'
 
 const App = () => {
-    return(
+    return (
         <>
-         <Header text = "this is header"  />
-         <Container>
-            <Hero/>
-            <MostPopular/>
-            <GamingLibrary/>
-         </Container>
-         <Footer/>
+            <Router basename={'/react'}>
+                <Header />
+                <Container>
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/profile' element={<Profile />} />
+                    </Routes>
+                </Container>
+                <Footer />
+            </Router>
         </>
     )
 }

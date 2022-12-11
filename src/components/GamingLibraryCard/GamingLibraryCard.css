@@ -4,9 +4,12 @@
 
 .gaming-library-card ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid #ffffff1f;
     padding: calc(var(--padding-primary)/2) 0;
+    text-align: center;
+    gap: 15px 10px;
 }
 
 .gaming-library-card h4{
@@ -16,7 +19,24 @@
 .gaming-library-card .main-button a{
     text-decoration: none;
 }
-
 img{
     border-radius: calc(var(--border-radius-primary)/3);
+}
+
+
+@media  screen and (max-width: 992px){
+    .gaming-library-card ul li,
+    .gaming-library-card ul div{
+        flex: 1 25%;
+        font-size: 14px;
+    }
+    .gaming-library-card-image{
+        flex: 1 1 100% !important;
+    }
+
+    .gaming-library-card-image img{
+        width: 100%;
+    }
+    
+    
 }

@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: var(--color-bg-body);
+    background-color: var(--color-bg-body) !important;
 }
 
 ul{
