@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Container } from "./components/index"
 import { Header, Footer } from "./Sections/index"
 import { Home, Profile } from './Pages/index'
-
+// basename={'/react'}
 const App = () => {
     return (
         <>
-            <Router basename={'/react'}>
+            <Router >
                 <Header />
                 <Container>
                     <Routes>
